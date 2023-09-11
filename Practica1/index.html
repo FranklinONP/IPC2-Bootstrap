@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión_202200089</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-3">
+            <!-- Imagen a la izquierda -->
+            <img src="imagenIzquierda.jpg" alt="Imagen izquierda" class="img-fluid">
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <h3 class="card-title">Iniciar Sesión</h3>
+                </div>
+                <div class="card-body">
+                    <form id="loginForm" onsubmit="return validarFormulario();">
+                        <div class="mb-3">
+                            <label for="usuario" class="form-label">Usuario:</label>
+                            <input type="text" class="form-control" id="usuario" placeholder="Nombre de usuario">
+                        </div>
+                        <div class="mb-3">
+                            <label for="contrasena" class="form-label">Contraseña:</label>
+                            <input type="password" class="form-control" id="contrasena" placeholder="Contraseña">
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <!-- Imagen a la derecha -->
+            <img src="imagenDerecha.jpg" alt="Imagen derecha" class="img-fluid">
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row">
+      <div class="col text-center">
+        <div class="p-3 mb-2 bg-primary text-white display-6">Usuario: frank</div>
+        <div class="p-3 mb-2 bg-dark text-white display-6">Contraseña: 1</div>
+
+    </div>
+  </div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
+<script>
+    function validarFormulario() {
+        const usuario = document.getElementById('usuario').value;
+        const contrasena = document.getElementById('contrasena').value;
+
+        // Verificar las credenciales (esto es un ejemplo simple, debes reemplazarlo con tu lógica de autenticación)
+        if (usuario === 'frank' && contrasena === '1') {
+            window.location.href = 'index2.html'; // Redirige a la página principal
+            return false; // Evita que el formulario se envíe
+        } else {
+            alert('Usuario o contraseña incorrectos');
+            return false; // Evita que el formulario se envíe
+        }
+    }
+</script>
+</body>
+</html>

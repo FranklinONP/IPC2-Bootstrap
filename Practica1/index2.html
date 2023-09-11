@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostrar/Ocultar Contenido</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+          <div class="col mx-auto">
+            <h1 class="title text-primary">Presione el botón para desplegar la información del mismo.</h1>
+            <h1 class="title text-dark">_________________________________________________________________</h1>
+          </div>
+        </div>
+      </div>
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+            <!-- Botón 1 -->
+            <button class="btn btn-primary btn-block mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#contenido1" aria-expanded="false" aria-controls="contenido1">
+                POO
+            </button>
+            <!-- Contenido 1 (inicialmente oculto) -->
+            <div class="collapse" id="contenido1">
+                <div class="card">
+                    <img src="poo.jpg" alt="Imagen 1" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Pogramacion Orientada a Objetos (POO)</h5>
+                        <p class="card-text">La programación orientada a objetos (POO) es un paradigma de 
+                            programación que se basa en la organización de código en "objetos", que son instancias 
+                            de clases. Cada objeto encapsula datos (atributos) y funciones (métodos) relacionados en 
+                            una unidad cohesiva. La POO se centra en el concepto de modelar el mundo real y sus interacciones
+                             mediante objetos que pueden interactuar entre sí para resolver problemas de manera más organizada 
+                             y modular. Esto promueve la reutilización de código, la abstracción de datos y la encapsulación, 
+                             lo que facilita el desarrollo, mantenimiento y comprensión del software..</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <!-- Botón 2 -->
+            <button class="btn btn-primary btn-block mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#contenido2" aria-expanded="false" aria-controls="contenido2">
+                Estructura de Datos
+            </button>
+            <!-- Contenido 2 (inicialmente oculto) -->
+            <div class="collapse" id="contenido2">
+                <div class="card">
+                    <img src="listas.jpg" alt="Imagen 2" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Listas</h5>
+                        <p class="card-text">Una lista enlazada hecha con nodos es una estructura de datos que se utiliza para 
+                            almacenar y organizar una colección de elementos. Cada elemento de la lista está representado por un 
+                            "nodo", que contiene dos partes principales: un valor (o dato) que almacena la información que se desea 
+                            guardar y un enlace (o puntero) que apunta al siguiente nodo en la secuencia. Estos nodos se conectan
+                             en una cadena secuencial, lo que permite el acceso y la manipulación eficiente de los elementos en la 
+                             lista, ya que los nodos se pueden agregar o eliminar fácilmente mediante la actualización de los enlaces.
+                              Las listas enlazadas pueden ser simples, dobles (con enlaces hacia adelante y hacia atrás) o circulares 
+                              (donde el último nodo apunta de nuevo al primero). Este tipo de estructura de datos es útil en situaciones 
+                              donde es necesario gestionar una colección dinámica de elementos de manera flexible.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <!-- Botón 3 -->
+            <button class="btn btn-primary btn-block mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#contenido3" aria-expanded="false" aria-controls="contenido3">
+                Python
+            </button>
+            <!-- Contenido 3 (inicialmente oculto) -->
+            <div class="collapse" id="contenido3">
+                <div class="card">
+                    <img src="python.jpg" alt="Imagen 3" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Lenguaje Python</h5>
+                        <p class="card-text">Python es un lenguaje de programación de alto nivel conocido por su
+                             legibilidad y versatilidad, utilizado en una amplia variedad de aplicaciones, desde 
+                             desarrollo web hasta análisis de datos y aprendizaje automático.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col text-center">
+        <div class="p-3 mb-2 bg-primary text-white display-6">by Franklin Orlando Noj Pérez.</div>
+        <div class="p-3 mb-2 bg-success text-white display-6">Carnet: 202200089----4to Semestre.</div>
+        <div class="p-3 mb-2 bg-secondary text-white display-6">IPC2_N</div>
+        <div class="p-3 mb-2 bg-dark text-white display-6">Universidad de San Carlos de Guatemala.</div>
+    </div>
+  </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
